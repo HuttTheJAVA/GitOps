@@ -9,8 +9,8 @@ pipeline {
     }      
     stage('git pull') {
       steps {
-        // https://github.com/HuttTheJAVA will replace by sed command before RUN
-        git url: 'https://github.com/HuttTheJAVA', branch: 'main'
+        // https://github.com/HuttTheJAVA/GitOps will replace by sed command before RUN
+        git url: 'https://github.com/HuttTheJAVA/GitOps', branch: 'main'
       }
     }
     stage('k8s deploy'){
